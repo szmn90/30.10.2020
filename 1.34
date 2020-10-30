@@ -1,0 +1,90 @@
+#zadanie 1.34b
+def potega(n):
+    if n==2:
+        return 2
+    x = potega(n-1)*2
+    print(x)
+    return x
+
+potega(12)
+
+#zadanie 1.34d
+def f(i):
+  if i == 0:
+    return
+  if i == 1:
+    return 10
+  return f(i-1) / (-2)
+print(f)
+
+#zadanie 1.34f
+def funkcja(i, u, x):
+    if(i == 0):
+        return
+    u = u - 0.5 * funkcja(i, u, x)
+    print(u)
+    x += 1
+    funkcja(i-1, u, x) 
+
+#zadanie 1.34i
+def unkcja(n):
+
+    if(n == 0):
+        return
+    if(n == 1):
+        return(-1)
+    if(n == 2):
+        return(0)
+    if(n == 3):
+        return(0.5)
+    return unkcja (n - 3) * (-1) + unkcja(n-1)
+
+#1.34j
+def nkcja(a, b, c):
+    if(a == 0):
+        return
+    if b == 0:
+        print(b)
+    if c == 1:
+        print(c)
+    b -= 1
+    print(b)
+    c += 1
+    print(c)
+    nkcja(a-1, b, c)
+
+#1.34e
+def abecadlo(x, y):
+    if(x == 0):
+        return
+    if (y == 3):
+        print (y)
+    y = y + 2
+    print(y)
+    y = y - 1
+    print(y)
+    print(abecadlo(x - 1, y))
+
+
+def kcja(a, b, c):
+    if(a == 0):
+        return
+    if(b == b-3):
+        print (b)
+    if c == 1:
+        print(c)
+    c = c*c-1
+    print (c)
+    c = b*c-1
+    print(c)
+    kcja(a-1, b, c)
+
+
+def szymon(o):
+    if(o == 0):
+        return
+    if(o == 1):
+        return(-2)
+    if(o == 2):
+        return(2.5)
+    return szymon(o-3) - szymon(o-1)  
