@@ -46,3 +46,20 @@ def f(z):
         return c
 for z in range (1,10 ):
     print(f(z))
+
+#35e
+def szymon(t):
+    a = 1
+    b = 2 
+    c = 3
+    if t > 3:
+        return szymon(t-1) * 2 + szymon(t-3)
+
+    elif (t == 1):
+        return a
+    elif t == 2:
+        return b
+    elif t == 3:
+        return c
+for t in range (1, 4):
+    print(szymon(t))
